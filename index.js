@@ -2,11 +2,12 @@ var numberOfButton = document.querySelectorAll(".drum").length;
 function ButtonAnimation(key){
     var ActiveButton = document.querySelector("."+key);
     var OriginalColor = "#DA0463";
-    ActiveButton.style.color = "black";
+    ActiveButton.classList.add("pressed")
     setTimeout(function() {
-        ActiveButton.style.color = OriginalColor;
+        ActiveButton.classList.remove("pressed")
       }, 200); // Wait 0.5 seconds (500 milliseconds)
 }
+
 
 
 
