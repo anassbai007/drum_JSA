@@ -1,7 +1,6 @@
 var numberOfButton = document.querySelectorAll(".drum").length;
 function ButtonAnimation(key){
     var ActiveButton = document.querySelector("."+key);
-    var OriginalColor = "#DA0463";
     ActiveButton.classList.add("pressed")
     setTimeout(function() {
         ActiveButton.classList.remove("pressed")
